@@ -1,0 +1,52 @@
+/*HEADER*/
+
+header {
+    background-color: white;
+    margin: 0;
+}
+
+header nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+}
+
+header nav ul li{
+    background-color:aquamarine;
+    margin: 0.8em;
+    width: 7em;
+    height: 3em;
+}
+
+header nav ul li img{
+    height: 100%
+}
+
+
+/*ZOEKEN*/
+
+.filter {
+    background-color: white;
+}
+
+/*SECTION*/
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    max-width: 27em;
+    margin: 0 auto;
+}
+
+section article {
+align-items: center;
+    background-color:white;
+    margin: 1em;
+    padding: .5em;
+    }
+
+body{
+    background-color:blanchedalmond;
+    margin: 0;
+}
