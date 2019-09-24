@@ -12,11 +12,15 @@ margin: 0;
 }
 
 header nav ul li{
-    background-color:aquamarine;
+    background-color:rgb(231, 231, 231);
     margin: 0.8em;
     width: 7em;
     height: 3em;
+    font-family: sans-serif;
+    border-radius: 10px;
 }
+
+
 
 header nav ul li img{
     height: 100%
@@ -27,6 +31,11 @@ header nav ul li img{
 
 .filter {
     background-color: white;
+}
+
+.filtertitle {
+    padding: .5em;
+    font-family: sans-serif;
 }
 
 /*SECTION*/
@@ -40,13 +49,42 @@ section{
 }
 
 section article {
-align-items: center;
+    align-items: center;
     background-color:white;
     margin: 1em;
     padding: .5em;
     }
 
+section article p {
+    font-family:open sans;
+    font-size: 0.9em;
+}
+
 body{
-    background-color:blanchedalmond;
+    background-color:rgb(231, 231, 231);
     margin: 0;
 }
+
+
+
+
+
+@media (min-width:50em){
+    section article  {
+          border-radius: 5px;
+    }
+
+    section article h3{
+        color: red;
+        font-family: sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
+
