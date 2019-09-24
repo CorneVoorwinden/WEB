@@ -20,8 +20,6 @@ header nav ul li{
     border-radius: 10px;
 }
 
-
-
 header nav ul li img{
     height: 100%
 }
@@ -66,9 +64,7 @@ body{
 }
 
 
-
-
-
+/*Media queries*/
 @media (min-width:50em){
     section article  {
           border-radius: 5px;
