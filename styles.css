@@ -3,22 +3,24 @@
 header {
     background-color: white;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header nav ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    margin: 0;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 header nav ul li {
-    background-color: #eaedee;
     margin: 0.8em;
     width: 7em;
     height: 3em;
     font-family: sans-serif;
-    border-radius: 10px;
+    text-align: center;
 }
 
 header nav ul li:first-of-type {
@@ -29,39 +31,33 @@ header nav ul li:first-of-type {
 header nav ul li img {
     height: 100%;
 }
-
-/*ZOEKEN*/
-.filter {
-    background-color: white;
-}
-.filtertitle {
+header section h2 {
     padding: .5em;
     font-family: sans-serif;
+    /*ZOEKEN*/
 }
-
-aside img{
+header img {
     width: 100%;
-
 }
 
 /*section*/
-section {
+main {
     display: flex;
     flex-direction: column;
     /max-width: 27em;
     margin: 0 auto;
 }
-section article {
+main article {
     align-items: center;
     background-color: white;
     margin: 1em;
     padding: .5em;
 }
-section article p {
+main article p {
     font-family: open sans;
     font-size: 0.9em;
 }
-section article a {
+main article a {
     text-decoration: none;
     font-family: open sans;
     font-size: 0.9em;
@@ -73,22 +69,22 @@ body {
 
 /*Media queries*/
 @media (min-width:40em) {
-    section {
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    section article {
+    main article {
         border-radius: 5px;
         /width: 27em;
     }
 
-    section article h3 {
+    main article h3 {
         font-family: sans-serif;
     }
 }
 @media (min-width:75em) {
-    section {
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
