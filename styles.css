@@ -6,13 +6,14 @@ header {
 }
 
 header nav ul {
-display: flex;
-list-style: none;
-margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
 }
 
-header nav ul li{
-    background-color:rgb(231, 231, 231);
+header nav ul li {
+    background-color: #eaedee;
     margin: 0.8em;
     width: 7em;
     height: 3em;
@@ -20,67 +21,75 @@ header nav ul li{
     border-radius: 10px;
 }
 
-header nav ul li img{
-    height: 100%
+header nav ul li:first-of-type {
+    margin-right: auto;
 }
 
+}
+header nav ul li img {
+    height: 100%;
+}
 
 /*ZOEKEN*/
-
 .filter {
     background-color: white;
 }
-
 .filtertitle {
     padding: .5em;
     font-family: sans-serif;
 }
 
-/*SECTION*/
+aside img{
+    width: 100%;
 
+}
 
-section{
+/*section*/
+section {
     display: flex;
     flex-direction: column;
-    max-width: 27em;
+    /max-width: 27em;
     margin: 0 auto;
 }
-
 section article {
     align-items: center;
-    background-color:white;
+    background-color: white;
     margin: 1em;
     padding: .5em;
-    }
-
+}
 section article p {
-    font-family:open sans;
+    font-family: open sans;
     font-size: 0.9em;
 }
-
-body{
-    background-color:rgb(231, 231, 231);
+section article a {
+    text-decoration: none;
+    font-family: open sans;
+    font-size: 0.9em;
+}
+body {
+    background-color: #eaedee;
     margin: 0;
 }
 
-
 /*Media queries*/
-@media (min-width:50em){
-    section article  {
-          border-radius: 5px;
+@media (min-width:40em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    section article h3{
-        color: red;
+    section article {
+        border-radius: 5px;
+        /width: 27em;
+    }
+
+    section article h3 {
         font-family: sans-serif;
     }
 }
-
-
-
-
-
-
-
-
-
+@media (min-width:75em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
