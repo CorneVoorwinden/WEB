@@ -27,6 +27,7 @@ header nav ul li:first-of-type {
     margin-right: auto;
 }
 
+
 }
 header nav ul li img {
     height: 100%;
@@ -38,6 +39,11 @@ header section h2 {
 }
 header img {
     width: 100%;
+}
+//
+header form fieldset {
+    display: flex;
+    flex-direction: row;
 }
 
 /*section*/
