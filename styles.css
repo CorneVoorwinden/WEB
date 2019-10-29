@@ -40,10 +40,38 @@ header section h2 {
 header img {
     width: 100%;
 }
-//
-header form fieldset {
+
+
+header form {
+  font-family: monospace;
+}
+
+/*search in header*/
+
+.search-wrapper {
+    width: 100%;
+    margin: auto;
+}
+header nav ul li form input{
+    width: 100%;
+    border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 15px;
+}
+header nav ul li form input:focus {
+    box-shadow: 0 0 15px 5px #b0e0ee;
+    border: 2px solid #bebede;
+}
+header form input{
+    visibility: hidden;
+}
+header form label{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+img {
+    width:100%;
 }
 
 /*section*/

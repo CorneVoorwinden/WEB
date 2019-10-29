@@ -15,9 +15,13 @@
                 <li>
                     <img src="images/dfdslogo.jpg" alt="het logo van DFDS">
                 </li>
-
                 <li>
-                    Dit wordt Zoeken
+
+                    <div class="search-wrapper">
+                        <form>
+                            <input type="text" name="focus" required class="search-box" placeholder="Enter search term" />
+                        </form>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -26,20 +30,15 @@
 
 
 
-        <form action="">
-            <fieldset>
-                <legend>Filter</legend>
+<form id=filter action="index-alle.html" method="get">
 
-                <label for="alleVerhalen">Alle verhalen</label>
-                <input type="radio" id="alleVerhalen">
-                <!--input nog onzichtbaar maken-->
+        <input id="dance" type="radio" name="category" value="Dance">
+        <label for="dance">Geestylde verhalen</label>
 
 
-                <label for="gestyldeVerhalen">Gestylde verhalen</label>
-                <input type="radio" id="gestyldeVerhalen">
-                <!--nog onzichtbaar maken-->
 
-            </fieldset>
+
+
         </form>
     </header>
 
@@ -89,7 +88,7 @@
         </article>
 
     </main>
-
+<script src="script.js"></script>
 </body>
 
 </html>
