@@ -7,6 +7,10 @@ header {
     flex-direction: column;
 }
 
+img {
+    width:100%;
+}
+
 header nav ul {
     display: flex;
     justify-content: flex-end;
@@ -27,23 +31,45 @@ header nav ul li:first-of-type {
     margin-right: auto;
 }
 
-
 }
 header nav ul li img {
     height: 100%;
 }
+
 header section h2 {
     padding: .5em;
     font-family: sans-serif;
     /*ZOEKEN*/
 }
+
 header img {
     width: 100%;
 }
+header.liked img{
+    transform: scale(1.1);
+}
 
-
+/*Header form*/
 header form {
-  font-family: monospace;
+  font-family:sans-serif ;
+    background-color: #eaedee;
+    font-weight: bold;
+    font-family:inherit;
+    font-size: 1.2em;
+
+}
+
+header form :hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+
+}
+
+header > form label{
+    background-color: #ed8b00;
+    padding: 1em;
+    margin: 0.2em;
+    box-shadow: 2px 5px #5f5f5f;
 }
 
 /*search in header*/
@@ -52,50 +78,55 @@ header form {
     width: 100%;
     margin: auto;
 }
+
+header nav ul li form.liked{
+    color: aqua;
+}
+
 header nav ul li form input{
     width: 100%;
     border: 1px solid #ccc;
   outline: 0;
   border-radius: 15px;
 }
+
 header nav ul li form input:focus {
     box-shadow: 0 0 15px 5px #b0e0ee;
     border: 2px solid #bebede;
-}
-header form input{
-    visibility: hidden;
-}
-header form label{
-    display: flex;
-    justify-content: center;
+    transform: scale(1.18);
 }
 
-img {
-    width:100%;
+header > form input{
+    visibility:hidden;
 }
 
 /*section*/
+
 main {
     display: flex;
     flex-direction: column;
     /max-width: 27em;
     margin: 0 auto;
 }
+
 main article {
     align-items: center;
     background-color: white;
     margin: 1em;
     padding: .5em;
 }
+
 main article p {
     font-family: open sans;
     font-size: 0.9em;
 }
+
 main article a {
     text-decoration: none;
     font-family: open sans;
     font-size: 0.9em;
 }
+
 body {
     background-color: #eaedee;
     margin: 0;
@@ -114,6 +145,9 @@ body {
     }
 
     main article h3 {
+        font-family: sans-serif;
+    }
+    header > form label{
         font-family: sans-serif;
     }
 }

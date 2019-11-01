@@ -1,3 +1,4 @@
+//bron: https://github.com/juliushonee/blok-web/blob/master/javascript/javascript.js en dit voorbeeld is ook in de les behandeld
 var danceRadio = document.getElementById("dance");
 var form = document.getElementById("filter");
 
@@ -6,12 +7,11 @@ danceRadio.addEventListener("click", function () {
 });
 
 
- var myLittleMenu = document.querySelector("form");
-var myLittleButton = document.querySelector("input");
+//Als we klikken op de zoekbalk
+//voegen we een class toe aan de body
+var zoekbalk =document.getElementById("search wrapper");
+var zoekgedeelte =document.getElementsByClassName("searchwrapper");
 
-//Als we klikken op de button
-//voegen we een class toe aan de button
-
-myLittleButton.addEventListener("click", function(){
-    myLittleMenu.classList.toggle("liked");
-});
+zoekbalk.addEventListener("click", function(){
+    zoekgedeelte.classList.toggle("liked");
+})
