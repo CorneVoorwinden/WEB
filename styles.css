@@ -21,7 +21,6 @@ header nav ul {
 
 header nav ul li {
     margin: 0.8em;
-    width: 7em;
     height: 3em;
     font-family: sans-serif;
     text-align: center;
@@ -36,71 +35,147 @@ header nav ul li img {
     height: 100%;
 }
 
-header section h2 {
-    padding: .5em;
-    font-family: sans-serif;
-    /*ZOEKEN*/
-}
-
 header img {
     width: 100%;
 }
-header.liked img{
-    transform: scale(1.1);
+    /*Schrijf je verhaal*/
+
+header nav ul  li a{
+  background-color: #ed8b00;
+    padding: 1em;
+    margin: 0.2em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight:600;
 }
+
+
 
 /*Header form*/
 header form {
-  font-family:sans-serif ;
     background-color: #eaedee;
     font-weight: bold;
     font-family:inherit;
     font-size: 1.2em;
+    margin: 1.5em;
+    background-color: white;
 
 }
 
 header form :hover{
-    transform: scale(1.2);
-    transition: transform 1s;
-
+    background-color: coral;
 }
+
+header form:focus{
+    background-color: coral;
+}
+
+
 
 header > form label{
     background-color: #ed8b00;
     padding: 1em;
-    margin: 0.2em;
     box-shadow: 2px 5px #5f5f5f;
+    font-family: sans-serif;
+    margin: 1em auto;
+
+
 }
 
-/*search in header*/
-
-.search-wrapper {
-    width: 100%;
-    margin: auto;
-}
-
-header nav ul li form.liked{
-    color: aqua;
-}
-
-header nav ul li form input{
-    width: 100%;
-    border: 1px solid #ccc;
-  outline: 0;
-  border-radius: 15px;
-}
-
-header nav ul li form input:focus {
-    box-shadow: 0 0 15px 5px #b0e0ee;
-    border: 2px solid #bebede;
-    transform: scale(1.18);
-}
 
 header > form input{
     visibility:hidden;
 }
 
-/*section*/
+/*form verhaal uploaden*/
+ section form {
+    /* Just to center the form on the page */
+    margin: 1em auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+     background-color: white
+}
+section form div + div {
+    margin-top: 1em;
+}
+
+section h1{
+    margin-bottom: 2em;
+    margin-left: 4em;
+    margin-top: 1.5em;
+    font-family: sans-serif;
+}
+
+
+section     label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+section input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+
+    /* To give the same size to all text field */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+section input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: skyblue;
+}
+
+section input:invalid{
+    border: 2px solid red;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+section input:valid{
+    border: 2px solid green;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+section button:hover{
+    background-color: coral;
+}
+
+section textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+
+.button1 {
+    padding-left: 90px; /* same size as the label elements */
+}
+section button {
+    margin-left: .5em;
+    background-color: #ed8b00;
+     padding: 1em;
+    margin: 0.2em;
+
+}
 
 main {
     display: flex;
@@ -112,24 +187,66 @@ main {
 main article {
     align-items: center;
     background-color: white;
-    margin: 1em;
+    margin: 0.8em;
     padding: .5em;
 }
 
+main article h1{
+    font-family: sans-serif;
+}
+
 main article p {
-    font-family: open sans;
-    font-size: 0.9em;
+    font-family: 'fonttekst';
+    font-size: 1em;
+    font-family:sans-serif;
 }
 
 main article a {
     text-decoration: none;
     font-family: open sans;
     font-size: 0.9em;
+    background-color: #002b45;
+    color: white;
+    padding: 0.3em;
+}
+
+main article a:focus{
+    background-color: coral;
+}
+
+main article a:hover{
+    background-color: coral;
 }
 
 body {
     background-color: #eaedee;
     margin: 0;
+}
+
+
+section div textarea.animatie{
+        transition:all 2s;
+}
+
+
+section div textarea.dancing {
+    transform:scale(1.5) rotate(-360deg) skew(5deg, -20deg);
+  padding:0 2em 2em;
+  /height:40em
+
+}
+
+
+/*Footer*/
+footer{
+    background-color: #dde6ed;
+}
+footer p{
+    color: #1b5786;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    padding: 2rem 1rem;
+
 }
 
 /*Media queries*/
@@ -141,15 +258,9 @@ body {
 
     main article {
         border-radius: 5px;
-        /width: 27em;
     }
 
-    main article h3 {
-        font-family: sans-serif;
-    }
-    header > form label{
-        font-family: sans-serif;
-    }
+
 }
 @media (min-width:75em) {
     main {

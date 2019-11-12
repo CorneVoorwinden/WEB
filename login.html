@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="images/dfdslogo.jpg" alt="het logo van DFDS">
+                </li>
+
+            </ul>
+        </nav>
+
+        <form id=filter action="index-alle.html" method="get">
+            <input id="dance" type="radio" name="category" value="Dance">
+            <label for="dance">Gestylde verhalen</label>
+        </form>
+    </header>
+
+<!--    bron: https://developer.mozilla.org/nl/docs/Learn/HTML/Forms/Your_first_HTML_form-->
+
+    <section>
+        <form action="/my-handling-form-page" method="post">
+       <h1 class="scroll">Schrijf je eigen verhaal</h1>
+
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+            </div>
+
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" />
+            </div>
+
+            <div>
+                <label for="msg">Verhaal:</label>
+                <textarea id="msg" name="user_message" class="animatie"></textarea>
+            </div>
+
+            <div class="button1">
+                <button> Verstuur je verhaal</button>
+            </div>
+
+        </form>
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

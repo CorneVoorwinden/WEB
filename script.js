@@ -7,11 +7,15 @@ danceRadio.addEventListener("click", function () {
 });
 
 
-//Als we klikken op de zoekbalk
-//voegen we een class toe aan de body
-var zoekbalk =document.getElementById("search wrapper");
-var zoekgedeelte =document.getElementsByClassName("searchwrapper");
 
-zoekbalk.addEventListener("click", function(){
-    zoekgedeelte.classList.toggle("liked");
-})
+/* 1. selecteer elementen met document.querySelector */
+var section = document.querySelector('section.animatie'); // first section element
+var button = document.querySelector('section > button');
+
+var dance = function () {
+  /* 3. toggle een class op een element, dit triggert een CSS Transition (zie CSS: section.dance) */
+    section.classList.toggle('dancing')
+}
+
+/* 2. voeg een event toe aan een element */
+button.addEventListener('click', dance);
