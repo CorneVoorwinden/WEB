@@ -249,9 +249,9 @@ body {
 
 /*keyframe animation*/
 h1 {
-  animation: dance 1s ;
+  animation: slide 1s ;
 }
-@keyframes dance {
+@keyframes slide {
   0% {transform: translateX(-115%);
   }
 
