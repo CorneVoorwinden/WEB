@@ -7,15 +7,22 @@ danceRadio.addEventListener("click", function () {
 });
 
 
+// function die ervooor zorgt dat als je op de button klikt je een alert krijgt.
+var versturen = document.getElementById("knopje");
 
-/* 1. selecteer elementen met document.querySelector */
-var section = document.querySelector('section.animatie'); // first section element
-var button = document.querySelector('section > button');
+ versturen.addEventListener("click",function() {
+     alert("je bericht is verstuurd.")
+ }  );
 
-var dance = function () {
-  /* 3. toggle een class op een element, dit triggert een CSS Transition (zie CSS: section.dance) */
-    section.classList.toggle('dancing')
-}
 
-/* 2. voeg een event toe aan een element */
-button.addEventListener('click', dance);
+
+
+//class toevoegen aan button
+
+var button = document.querySelector("article > button");
+var element = document.querySelector("img");
+
+button.addEventListener("click", function(){
+    element.classList.toggle("bijzonder");
+});
+

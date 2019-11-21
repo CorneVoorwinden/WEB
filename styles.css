@@ -37,6 +37,11 @@ header nav ul li img {
 
 header img {
     width: 100%;
+    opacity: 1;
+}
+
+header img.bijzonder{
+opacity: 0.5;
 }
     /*Schrijf je verhaal*/
 
@@ -97,13 +102,13 @@ header > form input{
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
-     background-color: white
+     background-color: white;
 }
 section form div + div {
     margin-top: 1em;
 }
 
-section h1{
+section h2{
     margin-bottom: 2em;
     margin-left: 4em;
     margin-top: 1.5em;
@@ -138,13 +143,13 @@ section input:focus, textarea:focus {
     border-color: skyblue;
 }
 
-section input:invalid{
+textarea, section input:invalid{
     border: 2px solid red;
     border-radius: 2px;
     transition: 1s;
 }
 
-section input:valid{
+ section input , textarea:valid{
     border: 2px solid green;
     border-radius: 2px;
     transition: 1s;
@@ -171,11 +176,16 @@ section textarea {
 }
 section button {
     margin-left: .5em;
-    background-color: #ed8b00;
+    background-color: #002b45;
      padding: 1em;
     margin: 0.2em;
+    color: white;
 
 }
+
+
+/*Main*/
+
 
 main {
     display: flex;
@@ -191,15 +201,28 @@ main article {
     padding: .5em;
 }
 
+h1{
+    font-family: font1, sans-serif;
+    font-size: 2em;
+    padding:  0 0.5em ;
+    color: #4d4e4c;
+}
+
 main article h1{
     font-family: sans-serif;
+    font-size: 1.4em;
+    padding: 0;
+    color: #4d4e4c;
+    animation: none;
 }
 
 main article p {
-    font-family: 'fonttekst';
+    font-family: 'fonttekst',sans-serif;
     font-size: 1em;
     font-family:sans-serif;
 }
+
+
 
 main article a {
     text-decoration: none;
@@ -224,17 +247,22 @@ body {
 }
 
 
-section div textarea.animatie{
-        transition:all 2s;
+
+/*keyframe animation*/
+h1 {
+  animation: dance 1s ;
+}
+@keyframes dance {
+  0% {transform: translateX(-115%);
+  }
+
+  100% {
+      transform: translateX(0%);
+  }
 }
 
 
-section div textarea.dancing {
-    transform:scale(1.5) rotate(-360deg) skew(5deg, -20deg);
-  padding:0 2em 2em;
-  /height:40em
 
-}
 
 
 /*Footer*/
